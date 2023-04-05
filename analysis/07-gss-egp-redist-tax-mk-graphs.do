@@ -3,7 +3,7 @@ capture clear
 capture log close
 cls
 
-log using log/gss-egp-redist-tax-mk-graphs.log, replace
+log using log/07-gss-egp-redist-tax-mk-graphs.log, replace
 
 *** set scheme
 set scheme plotplainblind 
