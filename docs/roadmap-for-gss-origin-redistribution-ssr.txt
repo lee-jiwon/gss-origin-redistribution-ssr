@@ -1,0 +1,178 @@
+<Roadmap-for-gss-class-origin-redist>
+
+This is a roadmap to replicate "Consider your origins: Parental social class and preferences for redistribution in the United States from 1977 to 2018" published in SSR in 2023. 
+
+All of the do-files below are called (in their recommended order) within "do-all-for-archive-lee-2023-ssr.do," thus running this do-file would reproduce all estimates, figures, etc. 
+
+
+1.	analysis/01-gss-egp-redist-class-distribution.do, log
+
+Generate re-scaled weights and plot the distribution of class (Figure 1 in Lee 2023)
+
+	Takes in:
+		data/gss-1972-and-later-recoded-and-imputed.dta
+
+	Calls: 
+		 analysis/gss-egp-redist-rescale-weights.do
+
+	Yields: 
+		graph/egp6-dist-survey-year.gph, pdf
+		graph/oegp6-dist-survey-year.gph, pdf
+		graph/egp6-oegp6-dist-survey-year.gph, png, pdf (Figure 1)
+
+
+
+2.	analysis/02-gss-egp-redist-eqwlth-model-fit, log
+
+Compare model fit for various models for EQWLTH
+
+	Takes in:
+		data/gss-1972-and-later-recoded-and-imputed.dta 
+
+	Calls: 
+		 analysis/gss-egp-redist-rescale-weights.do
+
+	Yiedls:
+		docs/model-comparison.xlsx (sheet "EQWLTH", Table 4 panel a)
+
+
+
+3.	analysis/03-gss-egp-redist-eqwlth-estimation.do, log
+
+Estimate models for EQWLTH and store the results
+
+	Takes in:
+		data/gss-1972-and-later-recoded-and-imputed.dta
+
+	Calls: 
+		 analysis/gss-egp-redist-rescale-weights.do
+
+	Yields: 
+		data/eqwlth-trend.dta 
+
+		data/margins-eqwlth-m1.dta
+		data/margins-eqwlth-m2.dta
+		data/margins-eqwlth-m3.dta
+		data/margins-eqwlth-m4.dta
+		data/margins-eqwlth-m5.dta
+
+		data/margins-eqwlth-oegp-by-year.dta
+		data/margins-eqwlth-egp-by-year.dta
+
+
+
+4.	analysis/04-gss-egp-redist-eqwlth-mk-graphs.do, log
+
+Call in the estimates and make figures with it for EQWLTH
+
+	Takes in:
+		rawdata/income-inequality-census-equ-adjusted.xls (for Figure 2)
+		data/eqwlth-trend.dta
+
+		data/margins-eqwlth-m1.dta
+		data/margins-eqwlth-m2.dta
+		data/margins-eqwlth-m3.dta
+		data/margins-eqwlth-m4.dta
+		data/margins-eqwlth-m5.dta
+
+		data/margins-eqwlth-oegp-by-year.dta
+		data/margins-eqwlth-egp-by-year.dta
+
+	Yields: 
+		graph/eqwlth-trend.gph, pdf (figure 2-a)	
+		graph/eqwlth-oegp.gph, pdf (figure 3-a)
+
+		graph/eqwlth-combined-salariat-oegp.gph
+		graph/eqwlth-combined-intermediate-oegp.gph
+		graph/eqwlth-combined-farming-oegp.gph
+		graph/eqwlth-working-combined-oegp.gph
+		graph/eqwlth-class-origin-combined-oegp.gph (figure 4-a)
+
+ 		graph/eqwlth-salariat-combined-oegp.gph
+		graph/eqwlth-intermediate-combined-oegp.gph
+		graph/eqwlth-farming-working-combined-oegp.gph
+		graph/eqwlth-current-class-combined-oegp.gph (figure 4-b)
+
+
+5.	analysis/05-gss-egp-redist-tax-model-fit.do, log	
+
+Compare model fit for various models for TAX
+
+	Takes in:
+		data/gss-1972-and-later-recoded-and-imputed.dta
+
+	Calls: 
+		 analysis/gss-egp-redist-rescale-weights.do
+
+	Yiedls:
+		docs/model-comparison.xlsx (sheet "TAX", Table 4 panel a)
+
+
+
+6. 	analysis/06-gss-egp-redist-tax-estimation.do, log
+
+Estimate models for TAX and store the results
+
+	Takes in:
+		data/gss-1972-and-later-recoded-and-imputed.dta
+
+	Yields: 
+		data/margins-tax-trends.dta
+
+		data/margins-tax-m1.dta
+		data/margins-tax-m2.dta
+		data/margins-tax-m3.dta
+		data/margins-tax-m4.dta
+		data/margins-tax-m5.dta
+
+		data/margins-tax-oegp-by-year.dta
+		data/margins-tax-egp-by-year.dta
+
+
+
+7.	analysis/07-gss-egp-redist-tax-mk-graphs.do, log
+
+Call in the estimates and make figures with it for TAX
+
+	Takes in:
+		rawdata/marginal-tax-rate.xlsx
+
+		data/margins-tax-egp-by-year.dta
+		data/margins-tax-oegp-by-year.dta
+
+	Yields: 
+		data/margins-tax-trends.dta
+		graph/tax-trend.pdf, gph
+		graph/eqwlth-tax-trend.pdf, gph (Figure 2)
+
+		graph/tax-oegp.gph, pdf (Figure 3-b)
+
+		graph/tax-salariat-origin.gph
+		graph/tax-intermediate-origin.gph
+		graph/tax-farming-origin.gph
+		graph/tax-working-origin.gph
+		graph/tax-class-origin-combined.gph (Figure 5-a)
+
+		graph/tax-salariat-class.gph
+		graph/tax-intermediate-class.gph
+		graph/tax-farming-working-class.gph
+		graph/tax-current-class-combined.gph (Figure 5-b)
+	
+
+
+8.	analysis/08-gss-egp-redist-descriptive-table.do, log
+
+Generate table descriptive statistics 
+
+	Takes in:
+		data/gss-1972-and-later-recoded-and-imputed.dta
+	Yields:
+		docs/descriptives-indep.csv (Table S3)
+		docs/descriptives-eqwlth.csv (Table 3 top panel)
+		docs/descriptives-taxr.csv (Table 3 bottom panel)
+
+
+
+
+
+
