@@ -13,7 +13,7 @@ The content below is copied from the file, roadmap-for-gss-origin-redistribution
 
 ### Notes
 
-1.  The working directory in Stata should be set to the top directory (i.e., the one that includes the folders: code, data, docs, graph, log, tmp).  If using as a GitHub repository, and when stored locally in a folder "GitHub," the working directory would be set as the main repository folder for the project:
+1.  The working directory in Stata should be set to the top directory (i.e., the one that includes the folders: analysis, data, docs, graph, log, old).  If using as a GitHub repository, and when stored locally in a folder "GitHub," the working directory would be set as the main repository folder for the project:
 
     GitHub/gss-origin-redistribution-ssr
 
@@ -34,8 +34,9 @@ Plot the distribution of class origins and current classes (Figure 1 in Lee 2023
 
 	Takes in:
 		data/gss-1972-and-later-recoded-and-imputed.dta [external data]
-		[Note: This data file contains imputed and recoded variables, which "_pl" denoting logical imputation using 2006-2014 GSS panels, and "_rf" representing variables with model imputations using the -MissForest- package
-		       in R, merged to the original GSS 1972-2018 cross-sectional cumulative years data (release 1, "GSS7218_R1.dta")]
+		[Note: This data file contains imputed and recoded variables, with "_pl" denoting logical imputation using 2006-2014 GSS panels, 
+		and "_rf" representing variables with model imputations using the -MissForest- package
+		in R, merged to the original GSS 1972-2018 cross-sectional cumulative years data (release 1, "GSS7218_R1.dta")]
 
 	Calls: 
 		 analysis/gss-egp-redist-rescale-weights.do
