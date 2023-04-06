@@ -6,7 +6,6 @@
 
 * Lee, Jiwon. 2023. ”Consider Your Origins: Social Class and Preference for Redistribution in the United States from 1977 to 2018.” Social Science Research 110: 102840
 
-
 ## Road map of code 
 
 The content below is copied from the file, roadmap-for-gss-origin-redistribution-ssr.txt, which can be found in the docs folder of the repository.
@@ -19,7 +18,17 @@ The content below is copied from the file, roadmap-for-gss-origin-redistribution
 
 preceded, as necessary, by any machine-specific location information that indicates where the GitHub folder is located.
 
-2.  It is recommended that do files must be run in order and can be run with the file:
+
+2.  The data file (stata .dta file)
+
+	gss-1972-and-later-filled-in-recoded-imputed-in-sample.dta
+
+must be downloaded from [HERE](https://www.dropbox.com/scl/fo/ys78iii2eo952ab7bx9dq/h?dl=0&rlkey=cs33pcs5btwses89loy8rp9rm) and placed into the /data folder before executing any do-files. 
+
+This data file contains imputed and recoded variables, with "_pl" denoting logical imputation using 2006-2014 GSS panels, and "_rf" representing variables with model imputations using the -MissForest- package in R, merged to the original GSS 1972-2018 cross-sectional cumulative years data (release 1, "GSS7218_R1.dta")
+
+
+3.  It is recommended that do files must be run in order and can be run with the file:
 
 	do-all-to-replicate-lee-2023-ssr
 
