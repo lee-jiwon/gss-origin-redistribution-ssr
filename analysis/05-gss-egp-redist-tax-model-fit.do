@@ -3,7 +3,7 @@ capture clear
 capture log close
 cls
 
-log using log/gss-egp-redist-tax-estimation.log, replace
+log using log/05-gss-egp-redist-tax-estimation.log, replace
 
 use data/gss-1972-and-later-filled-in-recoded-imputed-in-sample.dta, clear
 
