@@ -1,8 +1,8 @@
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  C:\wd\gss-mobility-redist\released-for-replication\log/04-gss-egp-redist-eqwlth-mk-graphs.log
+       log:  C:\wd\gss-origin-redistribution-ssr\log/04-gss-egp-redist-eqwlth-mk-graphs.log
   log type:  text
- opened on:   5 Apr 2023, 14:46:34
+ opened on:   6 Apr 2023, 12:30:40
 
 . 
 . *** set scheme
@@ -23,8 +23,8 @@
 . tempfile ineq
 
 . save `ineq' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000001.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000001.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000001.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000001.tmp saved as .dta format
 
 . 
 . use data/eqwlth-trend.dta, clear
@@ -55,8 +55,8 @@ delimiter now ;
 >                 lpattern(dash)
 >                 lcolor(red) text(3.3 2000 "Log Income Deviation", size(medium)) 
 >             title("") ytitle("{bf:Gov't's Role in Reducing Inequality}", 
->                                                                                                              
->                    size(medium) axis(1))  
+>                                                                                                                                 size(m
+> edium) axis(1))  
 >                 ytitle("{bf:Log Deviation of Income}", size(medium) axis(2)) 
 >                 ylabel(0.3(0.1)1, axis(2) labsize(large) labcolor(black) tlcolor(black) format(%5.1f))
 >                 ymtick(,tlcolor(black) ) 
@@ -75,7 +75,6 @@ delimiter now cr
 . graph display, ysize(8) xsize(14)          
 
 . gr save graph/eqwlth-trend.gph, replace
-(file graph/eqwlth-trend.gph not found)
 file graph/eqwlth-trend.gph saved
 
 . gr export graph/eqwlth-trend.pdf, replace
@@ -93,8 +92,8 @@ file graph/eqwlth-trend.pdf saved as PDF format
 . gen model = 2
 
 . save `m2' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000002.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000002.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000002.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000002.tmp saved as .dta format
 
 . 
 . use data/margins-eqwlth-m3.dta, clear   
@@ -103,8 +102,8 @@ file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000002.tmp saved as .dta format
 . gen model = 3
 
 . save `m3',replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000003.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000003.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000003.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000003.tmp saved as .dta format
 
 . 
 . use data/margins-eqwlth-m4.dta, clear   
@@ -113,8 +112,8 @@ file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000003.tmp saved as .dta format
 . gen model = 4
 
 . save `m4' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000004.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000004.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000004.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000004.tmp saved as .dta format
 
 . 
 . use data/margins-eqwlth-m5.dta, clear   
@@ -123,8 +122,8 @@ file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000004.tmp saved as .dta format
 . gen model = 5
 
 . save `m5' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000005.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000005.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000005.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000005.tmp saved as .dta format
 
 . 
 . use data/margins-eqwlth-m1.dta, clear   
@@ -270,14 +269,12 @@ delimiter now ;
 >                 text(61.1 `est_43'  "`est_43'", place(c) color(green%90))               
 >                 
 >                 text(59.9 `est_14'  "`est_14'", place(c) color(black%90))
->                 text(58.9 `=`est_24'+0.06'  "`est_24'", place(c) color(blue%90))                             
->    
+>                 text(58.9 `=`est_24'+0.06'  "`est_24'", place(c) color(blue%90))                                
 >                 text(57.9 `=`est_34'+0.06'  "`est_34'", place(c) color(red%90))
 >                 text(55.1 `est_44'  "`est_44'", place(c) color(green%90))       
 >                 
 >                 text(53.9 `est_15'  "`est_15'", place(c) color(black%90))
->                 text(52.9 `=`est_25'+0.06'   "`est_25'", place(c) color(blue%90))                            
->    
+>                 text(52.9 `=`est_25'+0.06'   "`est_25'", place(c) color(blue%90))                               
 >                 text(51.9 `=`est_35'+0.06'  "`est_35'", place(c) color(red%90))
 >                 text(49.1 `est_45'  "`est_45'", place(c) color(green%90))       
 >                 
@@ -285,7 +282,6 @@ delimiter now ;
 (note:  named style balck not found in class color, default attributes used)
 
 .                 gr save graph/eqwlth-oegp.gph, replace ;
-(file graph/eqwlth-oegp.gph not found)
 file graph/eqwlth-oegp.gph saved
 
 . gr export graph/eqwlth-oegp.pdf, replace ;
@@ -331,7 +327,6 @@ delimiter now ;
 >                 aspectratio(1.5) ;
 
 . gr save graph/eqwlth-combined-salariat-oegp.gph, replace ;
-(file graph/eqwlth-combined-salariat-oegp.gph not found)
 file graph/eqwlth-combined-salariat-oegp.gph saved
 
 .         * intermediate origin ;
@@ -351,7 +346,6 @@ file graph/eqwlth-combined-salariat-oegp.gph saved
 >                 aspectratio(1.5) ;
 
 .         gr save graph/eqwlth-combined-intermediate-oegp.gph, replace ;
-(file graph/eqwlth-combined-intermediate-oegp.gph not found)
 file graph/eqwlth-combined-intermediate-oegp.gph saved
 
 . * farming origin ;
@@ -371,7 +365,6 @@ file graph/eqwlth-combined-intermediate-oegp.gph saved
 >                 aspectratio(1.5) ;
 
 . gr save graph/eqwlth-combined-farming-oegp.gph, replace ;
-(file graph/eqwlth-combined-farming-oegp.gph not found)
 file graph/eqwlth-combined-farming-oegp.gph saved
 
 . * working origin ;
@@ -391,7 +384,6 @@ file graph/eqwlth-combined-farming-oegp.gph saved
 >                 aspectratio(1.5) ;
 
 . gr save graph/eqwlth-working-combined-oegp.gph, replace ;
-(file graph/eqwlth-working-combined-oegp.gph not found)
 file graph/eqwlth-working-combined-oegp.gph saved
 
 . * combined graphs ;
@@ -402,7 +394,6 @@ file graph/eqwlth-working-combined-oegp.gph saved
 >         graph/eqwlth-working-combined-oegp.gph, imargin(medsmall) cols(4) ;
 
 . gr save graph/eqwlth-class-origin-combined-oegp.gph, replace ;
-(file graph/eqwlth-class-origin-combined-oegp.gph not found)
 file graph/eqwlth-class-origin-combined-oegp.gph saved
 
 . #delimit cr
@@ -442,7 +433,6 @@ delimiter now ;
 >                 aspectratio(1.5) ;
 
 . gr save graph/eqwlth-salariat-combined-oegp.gph, replace ;
-(file graph/eqwlth-salariat-combined-oegp.gph not found)
 file graph/eqwlth-salariat-combined-oegp.gph saved
 
 .         * intermediate class ;
@@ -462,7 +452,6 @@ file graph/eqwlth-salariat-combined-oegp.gph saved
 >                 aspectratio(1.5) ;
 
 .         gr save graph/eqwlth-intermediate-combined-oegp.gph, replace ;
-(file graph/eqwlth-intermediate-combined-oegp.gph not found)
 file graph/eqwlth-intermediate-combined-oegp.gph saved
 
 . * farming/working class ;
@@ -482,7 +471,6 @@ file graph/eqwlth-intermediate-combined-oegp.gph saved
 >                 aspectratio(1.5) ;
 
 . gr save graph/eqwlth-farming-working-combined-oegp.gph, replace ;
-(file graph/eqwlth-farming-working-combined-oegp.gph not found)
 file graph/eqwlth-farming-working-combined-oegp.gph saved
 
 . * combined graphs ;
@@ -494,7 +482,6 @@ file graph/eqwlth-farming-working-combined-oegp.gph saved
 >         , imargin(medsmall) cols(4) ;
 
 . gr save graph/eqwlth-current-class-combined-oegp.gph, replace ;
-(file graph/eqwlth-current-class-combined-oegp.gph not found)
 file graph/eqwlth-current-class-combined-oegp.gph saved
 
 . #delimit cr
@@ -502,7 +489,7 @@ delimiter now cr
 . 
 . log close
       name:  <unnamed>
-       log:  C:\wd\gss-mobility-redist\released-for-replication\log/04-gss-egp-redist-eqwlth-mk-graphs.log
+       log:  C:\wd\gss-origin-redistribution-ssr\log/04-gss-egp-redist-eqwlth-mk-graphs.log
   log type:  text
- closed on:   5 Apr 2023, 14:47:05
----------------------------------------------------------------------------------------------------------------
+ closed on:   6 Apr 2023, 12:31:20
+----------------------------------------------------------------------------------------------------------------------------------------

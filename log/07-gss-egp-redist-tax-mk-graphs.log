@@ -1,8 +1,8 @@
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  C:\wd\gss-mobility-redist\released-for-replication\log/gss-egp-redist-tax-mk-graphs.log
+       log:  C:\wd\gss-origin-redistribution-ssr\log/07-gss-egp-redist-tax-mk-graphs.log
   log type:  text
- opened on:   5 Apr 2023, 15:31:09
+ opened on:   6 Apr 2023, 13:08:14
 
 . 
 . *** set scheme
@@ -76,7 +76,6 @@ delimiter now cr
 . graph display, ysize(8) xsize(14)
 
 . gr save graph/tax-trend.gph, replace
-(file graph/tax-trend.gph not found)
 file graph/tax-trend.gph saved
 
 . gr export graph/tax-trend.pdf, replace
@@ -98,7 +97,6 @@ file graph/tax-trend.pdf saved as PDF format
 
 . 
 . gr save graph/eqwlth-tax-trend.gph, replace
-(file graph/eqwlth-tax-trend.gph not found)
 file graph/eqwlth-tax-trend.gph saved
 
 . gr export graph/eqwlth-tax-trend.pdf, replace
@@ -117,8 +115,8 @@ file graph/eqwlth-tax-trend.pdf saved as PDF format
 . gen model = 2
 
 . save `m2' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000001.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000001.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000001.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000001.tmp saved as .dta format
 
 . 
 . use data/margins-tax-m3.dta, clear      
@@ -127,8 +125,8 @@ file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000001.tmp saved as .dta format
 . gen model = 3
 
 . save `m3',replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000002.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000002.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000002.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000002.tmp saved as .dta format
 
 . 
 . use data/margins-tax-m4.dta, clear      
@@ -137,8 +135,8 @@ file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000002.tmp saved as .dta format
 . gen model = 4
 
 . save `m4' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000003.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000003.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000003.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000003.tmp saved as .dta format
 
 . 
 . use data/margins-tax-m5.dta, clear      
@@ -147,8 +145,8 @@ file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000003.tmp saved as .dta format
 . gen model = 5
 
 . save `m5' ,replace
-(file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000004.tmp not found)
-file C:\Users\jlee\AppData\Local\Temp\ST_23e074_000004.tmp saved as .dta format
+(file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000004.tmp not found)
+file C:\Users\jlee\AppData\Local\Temp\ST_28a750_000004.tmp saved as .dta format
 
 . 
 . use data/margins-tax-m1.dta, clear      
@@ -294,14 +292,12 @@ delimiter now ;
 >                 text(61.1 `est_43'  "`est_43'", place(c) color(green%90))               
 >                 
 >                 text(59.9 `est_14'  "`est_14'", place(c) color(black%90))
->                 text(58.9 `=`est_24'+0.015'  "`est_24'", place(c) color(blue%90))                            
->    
+>                 text(58.9 `=`est_24'+0.015'  "`est_24'", place(c) color(blue%90))                               
 >                 text(55.9 `=`est_34'+0.005'  "`est_34'", place(c) color(red%90))
 >                 text(55.1 `est_44'  "`est_44'", place(c) color(green%90))       
 >                 
 >                 text(53.9 `est_15'  "`est_15'", place(c) color(black%90))
->                 text(52.9 `=`est_25'+0.017'   "`est_25'", place(c) color(blue%90))                           
->    
+>                 text(52.9 `=`est_25'+0.017'   "`est_25'", place(c) color(blue%90))                              
 >                 text(49.9 `est_35'  "`est_35'", place(c) color(red%90))
 >                 text(49.1 `est_45'  "`est_45'", place(c) color(green%90))       
 >                 
@@ -309,7 +305,6 @@ delimiter now ;
 (note:  named style balck not found in class color, default attributes used)
 
 .                 gr save graph/tax-oegp.gph, replace ;
-(file graph/tax-oegp.gph not found)
 file graph/tax-oegp.gph saved
 
 . gr export graph/tax-oegp.pdf, replace ;
@@ -354,7 +349,6 @@ delimiter now ;
 >                 aspectratio(1.5) ;
 
 . gr save graph/tax-salariat-origin.gph, replace ;
-(file graph/tax-salariat-origin.gph not found)
 file graph/tax-salariat-origin.gph saved
 
 .         * intermediate origin ;
@@ -373,7 +367,6 @@ file graph/tax-salariat-origin.gph saved
 >                 aspectratio(1.5) ;
 
 .         gr save graph/tax-intermediate-origin.gph, replace ;
-(file graph/tax-intermediate-origin.gph not found)
 file graph/tax-intermediate-origin.gph saved
 
 . * farming origin ;
@@ -392,7 +385,6 @@ file graph/tax-intermediate-origin.gph saved
 >                 aspectratio(1.5) ;
 
 . gr save graph/tax-farming-origin.gph, replace ;
-(file graph/tax-farming-origin.gph not found)
 file graph/tax-farming-origin.gph saved
 
 . * working origin ;
@@ -411,7 +403,6 @@ file graph/tax-farming-origin.gph saved
 >                 aspectratio(1.5) ;
 
 . gr save graph/tax-working-origin.gph, replace ;
-(file graph/tax-working-origin.gph not found)
 file graph/tax-working-origin.gph saved
 
 . * combined graphs ;
@@ -422,7 +413,6 @@ file graph/tax-working-origin.gph saved
 >                 graph/tax-working-origin.gph, imargin(medsmall) cols(4) ;
 
 . gr save graph/tax-class-origin-combined.gph, replace ;
-(file graph/tax-class-origin-combined.gph not found)
 file graph/tax-class-origin-combined.gph saved
 
 . #delimit cr
@@ -460,7 +450,6 @@ delimiter now ;
 >                 aspectratio(1.5) ;
 
 . gr save graph/tax-salariat-class.gph, replace ;
-(file graph/tax-salariat-class.gph not found)
 file graph/tax-salariat-class.gph saved
 
 .         * intermediate class ;
@@ -479,7 +468,6 @@ file graph/tax-salariat-class.gph saved
 >                 aspectratio(1.5) ;
 
 .         gr save graph/tax-intermediate-class.gph, replace ;
-(file graph/tax-intermediate-class.gph not found)
 file graph/tax-intermediate-class.gph saved
 
 . * farming/working class ;
@@ -498,7 +486,6 @@ file graph/tax-intermediate-class.gph saved
 >                 aspectratio(1.5) ;
 
 . gr save graph/tax-farming-working-class.gph, replace ;
-(file graph/tax-farming-working-class.gph not found)
 file graph/tax-farming-working-class.gph saved
 
 . * combined graphs ;
@@ -510,7 +497,6 @@ file graph/tax-farming-working-class.gph saved
 >         , imargin(medsmall) cols(4) ;
 
 . gr save graph/tax-current-class-combined.gph, replace ;
-(file graph/tax-current-class-combined.gph not found)
 file graph/tax-current-class-combined.gph saved
 
 . #delimit cr
@@ -519,7 +505,7 @@ delimiter now cr
 . 
 . log close
       name:  <unnamed>
-       log:  C:\wd\gss-mobility-redist\released-for-replication\log/gss-egp-redist-tax-mk-graphs.log
+       log:  C:\wd\gss-origin-redistribution-ssr\log/07-gss-egp-redist-tax-mk-graphs.log
   log type:  text
- closed on:   5 Apr 2023, 15:32:58
----------------------------------------------------------------------------------------------------------------------------------------------------------
+ closed on:   6 Apr 2023, 13:09:01
+----------------------------------------------------------------------------------------------------------------------------------------
