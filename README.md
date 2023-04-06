@@ -19,7 +19,7 @@ The content below is copied from the file, roadmap-for-gss-origin-redistribution
 preceded, as necessary, by any machine-specific location information that indicates where the GitHub folder is located.
 
 
-2.  The data file (stata .dta file)
+2.  The following data file (Stata .dta file)
 
 	gss-1972-and-later-filled-in-recoded-imputed-in-sample.dta
 
