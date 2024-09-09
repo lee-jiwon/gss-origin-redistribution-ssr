@@ -67,7 +67,7 @@ Compare model fit for various models for EQWLTH
 	Calls: 
 		 analysis/gss-egp-redist-rescale-weights.do
 
-	Yiedls:
+	Yields:
 		docs/model-comparison.xlsx (sheet "EQWLTH", Table 4 panel a)
 
 
@@ -139,7 +139,7 @@ Compare model fit for various models for TAX
 	Calls: 
 		 analysis/gss-egp-redist-rescale-weights.do
 
-	Yiedls:
+	Yields:
 		docs/model-comparison.xlsx (sheet "TAX", Table 4 panel a)
 
 
