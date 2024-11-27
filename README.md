@@ -4,7 +4,7 @@
 
 #### This repository provides replication materials for:
 
-* Lee, Jiwon. 2023. ”Consider Your Origins: Social Class and Preference for Redistribution in the United States from 1977 to 2018.” Social Science Research 110: 102840
+* Lee, Jiwon. 2023. ”Consider Your Origins: Social Class and Preference for Redistribution in the United States from 1977 to 2018.” *Social Science Research* 110: 102840
 
 ## Road map of code 
 
